@@ -48,15 +48,15 @@ export default function CreateCountryForm() {
       <div>
         <div>
           <label htmlFor="name">Name</label>
-          <input type="text" name="name" />
+          <input type="text" name="name" required maxLength={50} />
         </div>
         <div>
           <label htmlFor="emoji">Emoji</label>
-          <input type="text" name="emoji" />
+          <input type="text" name="emoji" required maxLength={4} />
         </div>
         <div>
           <label htmlFor="code">Code</label>
-          <input type="text" name="code" />
+          <input type="text" name="code" required maxLength={3} minLength={2} />
         </div>
         <div>
           <label htmlFor="continent">Continent</label>
