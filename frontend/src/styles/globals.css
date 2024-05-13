@@ -1,5 +1,8 @@
 * {
   box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
 }
 
 html,
@@ -12,4 +15,135 @@ body {
   font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
     Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   background-color: #f5f5f5;
+}
+
+#header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 30px;
+  background-color: rgb(31, 31, 31);
+  color: #f5f5f5;
+}
+
+.main-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
+.create-country-form {
+  display: flex;
+  align-items: center;
+  border: 3px solid #ffefa6;
+  border-radius: 20px;
+  background-color: rgb(31, 31, 31);
+  padding: 30px 40px;
+}
+
+.create-country-form label {
+  color: #f5f5f5;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.create-country-form input {
+  width: 250px;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ffefa6;
+  border-radius: 20px;
+  background-color: rgb(31, 31, 31);
+  color: #f5f5f5;
+}
+
+.create-country-form select {
+  width: 250px;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ffefa6;
+  border-radius: 20px;
+  background-color: rgb(31, 31, 31);
+  color: #f5f5f5;
+  cursor: pointer;
+}
+
+.create-country-form div {
+  display: flex;
+  flex-direction: column;
+  margin: 5px 0;
+}
+
+.create-country-form button {
+  padding: 10px;
+  border: 1px solid #ffefa6;
+  border-radius: 30px;
+  background-color: #ffefa6;
+  color: rgb(31, 31, 31);
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  padding: 11px 0;
+  margin-top: 10px;
+}
+
+.create-country-form button:hover {
+  background-color: rgb(31, 31, 31);
+  color: #ffefa6;
+}
+
+.country-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+.country-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 120px;
+  height: 120px;
+  margin: 20px;
+  border: 3px solid #ffefa6;
+  border-radius: 20px;
+  background-color: rgb(31, 31, 31);
+  color: #f5f5f5;
+  cursor: pointer;
+  text-decoration: none;
+}
+.country-container:hover {
+  background-color: #ffefa6;
+  color: rgb(31, 31, 31);
+}
+
+.country-text {
+  font-weight: bold;
+  margin: 10px 0;
+}
+
+.country-emoji {
+  font-size: 48px;
+}
+
+.country-details {
+  width: 100vw;
+  padding: 50px;
+}
+
+.country-details-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 auto;
+  padding-top: 40px;
+  border: 3px solid #ffefa6;
+  border-radius: 20px;
+  width: 250px;
+  height: 250px;
+  color: #f5f5f5;
+  background-color: rgb(31, 31, 31);
 }
